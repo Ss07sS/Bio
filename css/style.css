@@ -1,0 +1,315 @@
+body {
+    background-color: #009999;
+    text-align: center;
+    font-family: 'Inter';
+}
+
+p {
+    line-height: 2;
+}
+
+.dark-section p, em {
+    color: #F6FFE6;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: 'Inter';
+    font-weight: 700;
+}
+
+h1 {
+    font-family: 'Inter';
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+hr {
+    width: 15%;
+    margin: 0 auto 3rem;
+}
+
+
+/* ANCHOR TAGS */
+a{
+    text-decoration: none;
+}
+
+.dark-section a {
+    color: #B1FF65;
+}
+
+.dark-section a:hover {
+    color: #F6FFE6;
+}
+
+.light-section a {
+    color: #487228;
+}
+
+.light-section a:hover {
+    color: #9BBE5F;
+}
+
+
+.icon {
+    width: 200px;
+    border-radius: 2rem;
+    margin: 2rem auto;
+
+    background-color:#009999;
+}
+
+@media (max-width: 900px) {
+    .icon {
+        width: 30%;
+    }
+}
+
+
+/* SECTIONS */
+.light-section {
+    color: #0A2603;
+}
+
+.dark-section {
+    background-color: #77A634;
+    color: white;
+}
+
+
+/* PADDING */
+#who-am-i {
+    padding: 5% 10%;
+}
+
+#profile, #tech-stack, .hobby {
+    padding: 5% 15%;
+}
+
+#contact {
+    padding: 0 15% 5%;
+}
+
+#footer {
+    padding: 5% 15% 0;
+}
+
+@media (max-width: 610px) {
+    #who-am-i {
+        padding: 7% 5%;
+    }
+    
+    #profile, #tech-stack, .hobby {
+        padding: 7% 10%;
+    }
+    
+    #contact {
+        padding: 0 10% 7%;
+    }
+    
+    #footer {
+        padding: 7% 10% 0;
+    }
+}
+
+/* TITLE */
+
+#title {
+    height: 100vh;
+
+    background-image: url("../images/bg1.jpg");
+    background-position: center center;
+}
+
+.blur-bg {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    background-color: #bcf5f780;
+    backdrop-filter: blur(1rem);
+    -webkit-backdrop-filter: blur(1rem);
+    padding: 7%;
+    border-radius: 3em;
+}
+
+.title-heading {
+    font-family: 'Satisfy', cursive;
+    font-size: 5rem;
+    line-height: 1.5;
+}
+
+.title-tagline {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 1.5rem;
+}
+
+
+@media (max-height: 400px), (max-width: 1200px) {
+
+    #title {
+        padding: 7%;
+    }
+
+    .heading-text {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        translate: -50% -50%;
+        width: 80%;
+    }
+
+    .blur-bg {
+        position: relative;
+        width: 100%;
+        height: 70%;
+        background-color: #66eef380;
+        backdrop-filter: blur(1rem);
+        border-radius: 3em;
+    }
+}
+
+@media (max-width: 610px) {
+    .title-heading {
+        font-size: 4rem;
+    }
+}
+
+@media (max-height: 400px) {
+
+    #title {
+        padding: 1% 10%;
+    }
+    
+    .blur-bg {
+        height: 100%;
+    }
+}
+
+@media (min-width: 610px) {
+    .hide {
+        content: "";
+    }
+}
+
+
+/* PROFILE */
+.profile-img {
+    border-radius: 100%;
+}
+
+
+/* WHO AM I */
+.skill {
+    margin-bottom: 2rem;
+}
+
+.who-am-i-heading {
+    padding-bottom: 2rem;
+}
+
+.who-am-i-desc {
+    width: 80%;
+    margin: auto;
+}
+
+
+/* TECH STACK */
+#abilities {
+    text-align: left;
+    line-height: normal;
+}
+
+@media (max-width: 576px) {
+    #abilities {
+        line-height: 2;
+    }
+}
+
+.ability {
+    margin: 3.5rem auto;
+}
+
+.progress, .progress-bar {
+    border-radius: 3rem;
+    
+}
+
+.progress {
+    background-color: #009999;
+}
+
+.progress-bar {
+    background-color: #83fef2;
+}
+
+/* IDE */
+.ide-logo {
+    width: 100px;
+    margin: 2rem 3rem;
+}
+
+
+/* HOBBIES */
+#hobbies {
+    padding: 5% 0;
+}
+
+.hobby {
+    margin-bottom: 1rem;
+}
+
+.hobby-desc {
+    width: 75%;
+    margin: auto;
+}
+
+
+/* CONTACT ME */
+@media (min-width: 780px) {
+    .phone {
+        text-align: left;
+    }
+
+    .email {
+        text-align: right;
+    }
+}
+
+#contact h2, #contact em, .contact-details {
+    margin: 2rem auto;
+}
+
+@media (max-width: 780px) {
+    .phone, .email {
+        margin: auto;
+    }
+}
+
+/* CONTACT ME BUTTON */
+.btn-light:enabled {
+    border-color: #3beafafc;
+    background-color: #009999;
+    border-radius: 1rem;
+    color: #0A2603;
+}
+
+.btn-light:hover {
+    background-color:#1ef9f9;
+    border-color: #0d8c8c;
+    color: #0A2603;
+}
+
+
+/* FOOTER */
+#footer p {
+    line-height: normal;
+    color: #63f3c8;
+}
+
+#footer i {
+    margin: 0.5rem;
+    font-size: 1.5rem;
+}
